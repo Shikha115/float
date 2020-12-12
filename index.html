@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>float</title>
+        <style>
+            div{
+                background-color: aqua; 
+            }
+            p{
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                float: left;
+                margin-right: 10px;
+                <!--
+               All elements will move to left and make a row but something will be off-->
+            }
+            #p1{
+                background-color: blue;
+               <!--
+               float:right;
+               It will move to right and other elements will took its place-->
+            }
+            #p2{
+                background-color: yellow;
+            }
+            #p3{
+                background-color: blueviolet;
+                <!--
+               clear:left;
+               means  p3 and p4 will move to next line bcoz p3 should not be touching other element on iss left side-->
+            }
+            }
+            #p4{
+                background-color: green;
+            }
+            section{
+                clear: left;
+                <!--
+               element won't be touching other elements on its left side-->
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Floating Elements</h1>
+        <div>
+            <p id=p1></p>
+            <p id=p2></p>
+            <p id=p3></p>
+            <p id=p4></p>
+            <section>This is regular content continuing after the paragraph boxes</section>
+        </div>
+    </body>
+</html>
